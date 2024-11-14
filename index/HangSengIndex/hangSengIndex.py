@@ -5,7 +5,7 @@ import pandas as pd
 # 数据来源 https://cn.investing.com/indices/hang-seng-tech-historical-data
 
 # 输入当天的值
-currentIndexValue = "19,823.45"
+currentIndexValue = "20,823.45"
 
 # 使用read_csv函数读取CSV文件
 data_file_path = '../../data/香港恒生指数历史数据daily.csv'
@@ -31,7 +31,7 @@ def hangSengIndex():
 
     # 计算排名百分比
     rank_percentage = (1 - (rank - 1) / total_value) * 100
-    print(f"输入值 {currentIndexValue} 在收盘数据中的排名是: {rank}_{total_value} 百分比为: {rank_percentage:.2f}%")
+    print(f"输入值 {currentIndexValue} 在收盘数据中的排名是: {rank}_{total_value} 超越历史百分比为: {rank_percentage:.2f}%")
 
 
 if __name__ == '__main__':

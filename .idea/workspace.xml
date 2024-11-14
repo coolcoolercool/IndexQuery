@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dab77ac5-bf94-4ac5-805a-f0d92941fe84" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/恒生科技指数历史数据daily.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/恒生科技指数历史数据weekly.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/CSI300_Index/getCSI300.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/CSI300_Index/getCSI300_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/HangSengIndex/hangSengTechIndex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/HangSengTechIndex/hangSengTechIndex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/print_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/send_type_request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index/CSI300_Index/huShen300Index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/readCSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/HangSengIndex/hangSengTechIndex.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/HangSengIndex/hangSengIndex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/HangSengTechIndex/hangSengTechIndex.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/HangSengTechIndex/hangSengTechIndex.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +42,13 @@
     "Python.__init__.executor": "Run",
     "Python.getCSI300.executor": "Run",
     "Python.getCSI300_test.executor": "Run",
+    "Python.hangSengIndex.executor": "Run",
     "Python.hangSengTechIndex.executor": "Run",
+    "Python.huShen300Index.executor": "Run",
+    "Python.readCSV.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/code/stockcode/stock_index_project/pythonProject/index/HangSengIndex",
+    "last_opened_file_path": "D:/code/stockcode/stock_index_project/pythonProject/index/CSI300_Index",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,9 +59,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\stockcode\stock_index_project\pythonProject\index\CSI300_Index" />
       <recent name="D:\code\stockcode\stock_index_project\pythonProject\index\HangSengIndex" />
       <recent name="D:\code\stockcode\stock_index_project\pythonProject\data" />
-      <recent name="D:\code\stockcode\stock_index_project\pythonProject\index\CSI300_Index" />
       <recent name="D:\code\stockcode\stock_index_project\pythonProject\utils" />
     </key>
   </component>
@@ -142,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731463062050</updated>
-      <workItem from="1731463064722" duration="13428000" />
+      <workItem from="1731463064722" duration="21314000" />
     </task>
     <servers />
   </component>
@@ -151,8 +144,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$getCSI300_test.coverage" NAME="getCSI300_test 覆盖结果" MODIFIED="1731483877989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/index/CSI300_Index" />
+    <SUITE FILE_PATH="coverage/pythonProject$hangSengIndex.coverage" NAME="hangSengIndex 覆盖结果" MODIFIED="1731550404986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/index/HangSengIndex" />
     <SUITE FILE_PATH="coverage/pythonProject$getCSI300.coverage" NAME="getCSI300 覆盖结果" MODIFIED="1731478597903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/index/CSI300_Index" />
-    <SUITE FILE_PATH="coverage/pythonProject$hangSengTechIndex.coverage" NAME="hangSengTechIndex 覆盖结果" MODIFIED="1731486499318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/index/HangSengIndex" />
+    <SUITE FILE_PATH="coverage/pythonProject$readCSV.coverage" NAME="readCSV 覆盖结果" MODIFIED="1731551833069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/pythonProject$hangSengTechIndex.coverage" NAME="hangSengTechIndex 覆盖结果" MODIFIED="1731554828918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/index/HangSengTechIndex" />
+    <SUITE FILE_PATH="coverage/pythonProject$huShen300Index.coverage" NAME="huShen300Index 覆盖结果" MODIFIED="1731563280167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/index/CSI300_Index" />
     <SUITE FILE_PATH="coverage/pythonProject$__init__.coverage" NAME="getCSI300 覆盖结果" MODIFIED="1731468453233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/index/CSI300_Index" />
   </component>
 </project>
