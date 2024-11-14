@@ -134,7 +134,7 @@ def print_period_data(data_file_path, input_value):
     # 计算最近一年的时间范围
     one_year_ago = current_date - timedelta(days=365)
     # 计算最近两年年的时间范围
-    one_year_ago = current_date - timedelta(days=365)
+    two_year_ago = current_date - timedelta(days=365 * 2)
     # 计算最近三年的时间范围
     three_years_ago = current_date - timedelta(days=365 * 3)
     # 计算最近五年的时间范围
@@ -232,6 +232,23 @@ def print_period_data(data_file_path, input_value):
     print(f"最近一年的日期范围是: {start_date} 到 {end_date}")
     print(f"输入值 {input_value} 的排名为: {rank}_{total} (超过了百分比: {percentage:.2f}%)")
     print(f"最近一年的涨跌幅度: {cumulative_change_percentage:.2f}%\n")
+
+    # 筛选最近两年的数据
+    recent_two_year_data = df[(df['日期'] >= two_year_ago) & (df['日期'] <= current_date)]
+    # 获取最近两年的起始和结束日期
+    start_date = recent_two_year_data['日期'].min().strftime('%Y-%m-%d')
+    end_date = recent_two_year_data['日期'].max().strftime('%Y-%m-%d')
+    # 通过累计涨跌幅列来计算这一段时间的总涨跌幅
+    cumulative_change = (1 + recent_two_year_data['涨跌幅'] / 100).prod() - 1
+    cumulative_change_percentage = cumulative_change * 100
+    # 计算输入值在最近两年中的排名
+    rank = (recent_two_year_data['收盘'] <= input_value).sum()  # 大于等于该值的个数
+    total = len(recent_two_year_data)
+    percentage = (rank / total) * 100
+    # 输出结果
+    print(f"最近两年的日期范围是: {start_date} 到 {end_date}")
+    print(f"输入值 {input_value} 的排名为: {rank}_{total} (超过了百分比: {percentage:.2f}%)")
+    print(f"最近两年的涨跌幅度: {cumulative_change_percentage:.2f}%\n")
 
     # 筛选最近三年的数据
     recent_three_year_data = df[(df['日期'] >= three_years_ago) & (df['日期'] <= current_date)]
